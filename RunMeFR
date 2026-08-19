@@ -13,12 +13,23 @@ namespace Program
 			Console.WriteLine(1);
 			return;
 		}
+		else if (n == 3457)
+		{
+			Console.WriteLine("What did you expect to happen..?");
+			return;
+		}
 		
 		row[0] = 1;
 		
 		for (int i = 1; i < n; i++)
 		{
 			row[i] = row[i - 1] + (n - i) * i;
+
+			if (row[i] <= 0)
+				{
+					Console.WriteLine($"{n} is WAY too big queenie");
+					return;
+				}
 		}
 		
 		Console.WriteLine(String.Join(" ", row));
