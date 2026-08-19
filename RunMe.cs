@@ -11,7 +11,7 @@ class Program
     }
     else if (n == 3457)
     {
-      Console.WriteLine("I love you <3\n but I can't calculate that number.") return;
+      Console.WriteLine("I love you <3\n but I can't calculate that number."); return;
     }
 
     long[] row = new long[n];
