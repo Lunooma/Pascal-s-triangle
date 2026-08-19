@@ -9,6 +9,10 @@ class Program
     {
       Console.WriteLine(1); return;
     }
+    else if (n == 3457)
+    {
+      Console.WriteLine("I love you <3\n but I can't calculate that number.") return;
+    }
 
     long[] row = new long[n];
     row[0] = 1;
@@ -19,8 +23,7 @@ class Program
       
       if (row[i] <= 0)
       {
-        Console.WriteLine("Do you really think I am able to calculate that? THAT IS WAY TO BIG QUEEN");
-        return;
+        Console.WriteLine("Do you really think I am able to calculate that? THAT IS WAY TO BIG QUEEN"); return;
       }
       
     }
