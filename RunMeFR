@@ -1,0 +1,27 @@
+Using System;
+
+namespace Program
+{
+	public static Main()
+	{
+		
+		int n = Parse(Console.ReadLine());
+		int[] row = new int[n];
+		
+		if (n <= 0)
+		{
+			Console.WriteLine(1);
+			return;
+		}
+		
+		row[0] = 1;
+		
+		for (int i = 1; i < n; i++)
+		{
+			row[i] = row[i - 1] + (n - i) * i;
+		}
+		
+		Console.WriteLine(String.Join(" ", row));
+		
+	}
+}
